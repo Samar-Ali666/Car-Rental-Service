@@ -55,119 +55,31 @@
 						<div class="column width-8 offset-1">
 							<div class="row">
 								<div class="column width-12">
-									<p class="lead mb-50">Treat every guest like a VIP from dining preferences to allergies to special occasions, Guestbook allows you to keep track of everything that matters. Bring diners back for more by creating targeted lists and exporting them to your favourite marketing tool.</p>
+									<p class="lead mb-50">We are team of five members motivated to provide rental car services in region of Islamabad and Rawalpindi. Our aim is to provide quality and exellence with an ease. We have variety of small to sedan class cars under affordable prices.</p>
 								</div>
 							</div>
 							<div class="row flex">
 								<div class="column width-6">
-									<h6 class="mb-30 weight-bold text-uppercase">Web Design</h6>
-									<p class="mb-50">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labor.</p>
+									<h6 class="mb-30 weight-bold text-uppercase">Fast Delivery</h6>
+									<p class="mb-50">Issem rent a ride provides fast delivery as soon as possible at your doorsteps!. Our team works day and night to bring exellence and quality to our customer with an ease.</p>
 								</div>
 								<div class="column width-6">
-									<h6 class="mb-30 weight-bold text-uppercase">Identity Creation</h6>
-									<p class="mb-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<h6 class="mb-30 weight-bold text-uppercase">Afforable prices</h6>
+									<p class="mb-50">Our main goal is not only provide excellence and quality services to our customers but to provide under affordable prices. So that our all kind of customers enjoy their rides!</p>
 								</div>
 								<div class="column width-6">
-									<h6 class="mb-30 weight-bold text-uppercase">Social Strategy</h6>
-									<p>Adipisicing elit, sed do eiusmod tempor incididun. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+									<h6 class="mb-30 weight-bold text-uppercase">Drivers</h6>
+									<p>Issem car rentals provides personal drivers with all kinds car bookings. We have team of qualify drivers which are always availible on kinds of car bookings and order!</p>
 								</div>
 								<div class="column width-6">
-									<h6 class="mb-30 weight-bold text-uppercase">Illustration</h6>
-									<p>Adipisicing elit, sed do eiusmod tempor incididun. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+									<h6 class="mb-30 weight-bold text-uppercase">Best Service!</h6>
+									<p>Issem Car rental are only rentals in origin that are providing excellence and quality to their customers with ease under afforable prices!. So visit our shop and book the ride that you love!</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- Service Section End -->
-
-				<!-- Team Grid -->
-				<div class="section-block team-2 pt-0 bkg-white">
-					<div class="row">
-						<div class="column width-12">
-							<div class="row content-grid-3">
-								<div class="grid-item horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;" data-threshold="0.3">
-									<div class="thumbnail rounded no-margin-bottom" data-hover-easing="easeInOut" data-hover-speed="500" data-hover-bkg-color="#ffffff" data-hover-bkg-opacity="0.9">
-										<img src="assets/images/team/team-member-1.jpg" width="760" height="500" alt=""/>
-									</div>
-									<div class="team-content-info center">
-										<h4 class="mb-5">Jason Ford</h4>
-										<h4 class="occupation">Developer</h4>
-										<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
-										<ul class="social-list list-horizontal">
-											<li><a href="#"><span class="icon-facebook small"></span></a></li>
-											<li><a href="#"><span class="icon-twitter small"></span></a></li>
-											<li><a href="#"><span class="icon-dribbble small"></span></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="grid-item horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.3">
-									<div class="thumbnail rounded no-margin-bottom" data-hover-easing="easeInOut" data-hover-speed="500" data-hover-bkg-color="#ffffff" data-hover-bkg-opacity="0.9">
-										<img src="assets/images/team/team-member-3.jpg" width="760" height="500" alt=""/>
-									</div>
-									<div class="team-content-info center">
-										<h4 class="mb-5">Michael Andrews</h4>
-										<h4 class="occupation">Designer</h4>
-										<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non.</p>
-										<ul class="social-list list-horizontal">
-											<li><a href="#"><span class="icon-facebook small"></span></a></li>
-											<li><a href="#"><span class="icon-twitter small"></span></a></li>
-											<li><a href="#"><span class="icon-github small"></span></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="grid-item horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:600ms;" data-threshold="0.3">
-									<div class="thumbnail rounded no-margin-bottom" data-hover-easing="easeInOut" data-hover-speed="500" data-hover-bkg-color="#ffffff" data-hover-bkg-opacity="0.9">
-										<img src="assets/images/team/team-member-4.jpg" width="760" height="500" alt=""/>
-									</div>
-									<div class="team-content-info center">
-										<h4 class="mb-5">Samuel Banks</h4>
-										<h4 class="occupation">Illustrator</h4>
-										<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non.</p>
-										<ul class="social-list list-horizontal">
-											<li><a href="#"><span class="icon-facebook small"></span></a></li>
-											<li><a href="#"><span class="icon-behance small"></span></a></li>
-											<li><a href="#"><span class="icon-dribbble small"></span></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Team Grid End -->
-
-				<!-- Hero 5 Section -->
-				<div class="section-block hero-5 hero-5-2 clear-height show-media-column-on-mobile bkg-ash">
-					<div class="media-column width-6"></div>
-					<div class="row">
-						<div class="column width-5 push-7">
-							<div class="hero-content split-hero-content">
-								<div class="hero-content-inner left horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;delay:200ms;" data-threshold="0.5">
-									<p class="lead color-white">Started by in New York by two guys back in early 2003 with one computer, one mouse and one big idea.</p>
-									<p class="color-grey-light">Adipisicing elit, sed do eiusmod tempor incididun. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
-									<p class="color-grey-light">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Hero 5 Section End -->
-
-				<!-- Custom Call to Action Section -->
-				<div class="section-block pt-40 pb-40">
-					<div class="row flex">
-						<div class="column width-8 left horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;delay:0;" data-threshold="1">
-							<p class="lead mb-0 mb-mobile-20">Find out everything you need to know in our weekly live webinar. Interviews with creators to discover stories behind our products.</p>
-						</div>
-						<div class="column width-4 v-align-middle horizon right left-on-mobile " data-animate-in="preset:slideInRightShort;duration:1000ms;delay:300;" data-threshold="1">
-							<div>
-								<a href="https://player.vimeo.com/video/118640180?autoplay=1" class="button rounded medium no-margins bkg-theme bkg-hover-theme color-white color-hover-white mb-0 lightbox-link"><span class="icon-play left"></span> Play Our Demo</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Custom  Call to Action Section End -->
 
 			</div>
 			<!-- Content End -->
