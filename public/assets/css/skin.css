@@ -1628,6 +1628,7 @@ body,
 	text-align: center;
 	color: #666;
 	opacity: 1;
+	margin-left: 10px;
 }
 .header .navigation .navigation-show.nav-icon:hover,
 .mobile .header .navigation .navigation-show.nav-icon:hover{

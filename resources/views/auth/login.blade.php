@@ -1,8 +1,9 @@
 @extends('layouts.master')
 @section('content')
+
+@include('includes.side_nav')
     <div class="wrapper">
         <div class="wrapper-inner">
-
             <!-- Header -->
             <header class="header header-relative header-fixed-on-mobile nav-dark" data-bkg-threshold="100" data-sticky-threshold="0">
                 <div class="header-inner">

@@ -193,11 +193,12 @@
     <div class="row full-width collapse">
         <div class="column width-12 slider-column no-padding">
             <div class="tm-slider-container recent-slider" data-nav-dark data-carousel-visible-slides="3" data-nav-keyboard="false" data-nav-pagination="true" data-nav-show-on-hover="false" data-carousel-1024="2">
-                <ul class="tms-slides"> 
+                <ul class="tms-slides">
+                @foreach($cars as $car) 
                     <li class="tms-slide">
                         <div class="thumbnail rounded img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#ffffff" data-hover-bkg-opacity="0.9">
-                            <a class="overlay-link" href="project-style-one.html">
-                                <img src="assets/images/portfolio/grid/large-margins/project-1-landscape.jpg" alt=""/>
+                            <a class="overlay-link" href="{{ route('car.single', $car->id) }}">
+                                <img src="{{$car->photo->file}}" alt=""/>
                                 <span class="overlay-info">
                                     <span>
                                         <span>
@@ -208,11 +209,12 @@
                             </a>
                         </div>
                         <div class="item-description mb-20">
-                            <h3 class="project-title mb-0">Suzuki <strong>Mehran</strong></h3>
-                            <span class="project-description">680cc car</span>
+                            <h3 class="project-title mb-0"><b>{{$car->name}}</b></h3>
+                            <span class="project-description">{{$car->rent}} / Per Day</span>
                         </div>
                     </li>
-                    <li class="tms-slide">
+                @endforeach
+                    {{-- <li class="tms-slide">
                         <div class="thumbnail rounded img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#ffffff" data-hover-bkg-opacity="0.9">
                             <a class="overlay-link" href="project-style-one.html">
                                 <img src="assets/images/portfolio/grid/large-margins/project-2-landscape.jpg" alt=""/>
@@ -301,7 +303,7 @@
                             <h3 class="project-title mb-0">Suzuki <strong>Wagon R</strong></h3>
                             <span class="project-description">1000cc car</span>
                         </div>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </div>

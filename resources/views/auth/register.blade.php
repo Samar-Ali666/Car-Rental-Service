@@ -1,6 +1,7 @@
 @extends('layouts.master')
 @section('content')
 
+@include('includes.side_nav')
     <div class="wrapper">
         <div class="wrapper-inner">
 
