@@ -37,7 +37,7 @@ return [
         'database' => [
             'driver' => 'database',
             'table' => 'jobs',
-            'queue' => 'default',
+            'queue' => ['default', 'book_invoice', 'restrict_user', 'activate_user'],
             'retry_after' => 90,
         ],
 

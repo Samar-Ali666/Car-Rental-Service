@@ -10,6 +10,10 @@ use App\Models\Admin;
 
 use App\Models\User;
 
+use App\Models\Car;
+
+use App\Models\Category;
+
 use App\Models\Booking;
 
 class AdminController extends Controller
@@ -21,6 +25,12 @@ class AdminController extends Controller
 
     	$users = User::latest()->paginate(5);
 
-    	return view('admin.home', compact('users', 'bookings'));
+    	$car_count = Car::count();
+
+    	$user_count = User::count();
+
+    	$category_count = Category::count();
+
+    	return view('admin.home', compact('users', 'bookings', 'car_count', 'user_count', 'category_count'));
     }
 }

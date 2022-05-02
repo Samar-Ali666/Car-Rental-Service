@@ -21,6 +21,8 @@ Route::get('/logout', [\App\Http\Controllers\Auth\LoginController::class, 'logou
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::delete('/home/{id}', [App\Http\Controllers\HomeController::class, 'destroy'])->name('home.destroy');
+
 Route::get('/shop', [App\Http\Controllers\ShopController::class, 'index'])->name('shop');
 
 Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
@@ -59,6 +61,10 @@ Route::group(['prefix'=>'admin'], function() {
 		Route::resource('/bookings', App\Http\Controllers\AdminBookingController::class);
 
 		Route::resource('/mails', App\Http\Controllers\AdminMailController::class);
+
+		Route::get('/user/{id}', [App\Http\Controllers\AdminUserController::class, 'show'])->name('user.show');
+
+		Route::put('/user/{id}', [App\Http\Controllers\AdminUserController::class, 'userAccess'])->name('user.access');
 	});
 
 	Route::get('login', [App\Http\Controllers\Auth\AdminLoginController::class, 'showLoginForm'])->name('admin.login');

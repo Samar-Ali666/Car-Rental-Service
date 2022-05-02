@@ -12,109 +12,109 @@ use App\Models\Car;
 
 class AdminCarController extends Controller
 {
-	
-    public function index() {
+    public function index()
+    {
+        $cars = Car::latest()->paginate(5);
 
-    	$cars = Car::latest()->paginate(5);
-
-    	return view('admin.cars.index', compact('cars'));
+        return view('admin.cars.index', compact('cars'));
     }
 
-    public function create() {
+    public function create()
+    {
+        $categories = Category::all();
 
-    	$categories = Category::all();
-
-    	return view('admin.cars.create', compact('categories'));
+        return view('admin.cars.create', compact('categories'));
     }
 
-    public function store(Request $request) {
+    public function store(Request $request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'rent' => 'required',
+            'category_id' => 'required',
+            'photo_id' => 'required',
+            'description' => 'required',
+        ]);
 
-    	$request->validate([
+        $input = $request->all();
 
-    		'name' => 'required',
-    		'rent' => 'required',
-    		'category_id' => 'required',
-    		'photo_id' => 'required',
-    		'description' => 'required',
-    	]);
+        if ($file = $request->file('photo_id')) {
+            $name = $file->getClientOriginalName();
 
-    	$input = $request->all();
+            $file->move('images', $name);
 
-    	if ($file = $request->file('photo_id')) {
-    		
-    		$name = $file->getClientOriginalName();
+            $photo = Photo::create(['file' => $name]);
 
-    		$file->move('images', $name);
+            $input['photo_id'] = $photo->id;
+        }
 
-    		$photo = Photo::create(['file' => $name]);
+        Car::create($input);
 
-    		$input['photo_id'] = $photo->id;
-    	}
+        alert()->success(
+            'Car Created!',
+            'The car has been created successfully'
+        );
 
-    	Car::create($input);
-
-    	alert()->success('Car Created!', 'The car has been created successfully');
-
-    	return redirect()->route('cars.index');
+        return redirect()->route('cars.index');
     }
 
-    public function show($id) {
+    public function show($id)
+    {
+        $car = Car::findOrFail($id);
 
-    	$car = Car::findOrFail($id);
-
-    	return view('admin.cars.show', compact('car'));
+        return view('admin.cars.show', compact('car'));
     }
 
-    public function edit($id) {
+    public function edit($id)
+    {
+        $car = Car::findOrFail($id);
 
-    	$car = Car::findOrFail($id);
+        $categories = Category::all();
 
-    	$categories = Category::all();
-
-    	return view('admin.cars.edit', compact('car', 'categories'));
+        return view('admin.cars.edit', compact('car', 'categories'));
     }
 
-    public function update(Request $request, $id) {
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'name' => 'required',
+            'rent' => 'required',
+            'category_id' => 'required',
+            'photo_id' => 'required',
+            'description' => 'required',
+        ]);
 
-    	$request->validate([
+        $input = $request->all();
 
-    		'name' => 'required',
-    		'rent' =>'required',
-    		'category_id' => 'required',
-    		'photo_id' => 'required',
-    		'description' => 'required'
-    	]);
+        if ($file = $request->file('photo_id')) {
+            $name = $file->getClientOriginalName();
 
-    	$input = $request->all();
+            $file->move('images', $name);
 
-    	if ($file = $request->file('photo_id')) {
-    		
-    		$name = $file->getClientOriginalName();
+            $photo = Photo::create(['file' => $name]);
 
-    		$file->move('images', $name);
+            $input['photo_id'] = $photo->id;
+        }
 
-    		$photo = Photo::create(['file' => $name]);
+        Car::whereId($id)
+            ->first()
+            ->update($input);
 
-    		$input['photo_id'] = $photo->id;
-    	}
+        alert()->success('Updated!', 'The car has been updated successfully');
 
-    	Car::whereId($id)->first()->update($input);
-
-    	alert()->success('Updated!', 'The car has been updated successfully');
-
-    	return redirect()->route('cars.index');
+        return redirect()->route('cars.index');
     }
 
-    public function destroy(Request $request, $id) {
+    public function destroy(Request $request, $id)
+    {
+        $car = Car::findOrFail($id);
 
-    	$car = Car::findOrFail($id);
+        unlink(public_path() . $car->photo->file);
 
-    	unlink(public_path() . $car->photo->file);
+        $car->delete();
 
-    	$car->delete();
+        alert()->success('Deleted!', 'The car has been deleted successfully');
 
-    	alert()->success('Deleted!', 'The car has been deleted successfully');
-
-    	return redirect()->route('cars.index');
+        return redirect()->route('cars.index');
     }
 }

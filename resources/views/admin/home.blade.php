@@ -67,7 +67,7 @@
 							<div class="row">
     						<div class="col-md-5 text-center order-2">
 								<h2>
-                                	<i class="fas fa-car text-info"></i> 10
+                                	<i class="fas fa-car text-info"></i> {{$car_count}}
                             	</h2>
     						</div>
     						<div class="col-md-7 text-center order-1">
@@ -99,7 +99,7 @@
     							<div class="row">
     						<div class="col-md-5 text-center order-2">
 								<h2>
-                                	<i class="fas fa-users text-info"></i> 6
+                                	<i class="fas fa-users text-info"></i> {{$user_count}}
                             	</h2>
     						</div>
     						<div class="col-md-7 text-center order-1">
@@ -118,6 +118,7 @@
     						<table class="table table-bordered">
     							<thead class="">
     								<th>#</th>
+                                    <th>Avatar</th>
     								<th>Name</th>
     								<th>Email</th>
     								<th>Registered</th>
@@ -127,11 +128,14 @@
     								@foreach($users as $user)
     								<tr>
     									<td>{{$user->id}}</td>
+                                        <td>
+                                            <img class="border rounded-circle border-primary p-1" style="height: 50px;" src="/images/user_icon.png" alt="">
+                                        </td>
     									<td>{{$user->name}}</td>
     									<td>{{$user->email}}</td>
     									<td>{{$user->created_at->diffForHumans()}}</td>
     									<td>
-    										<a href="#" class="btn btn-primary btn-sm">
+    										<a href="{{ route('user.show', $user->id) }}" class="btn btn-primary btn-sm">
     											<i class="fas fa-eye"></i>
     										</a>
     									</td>

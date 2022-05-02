@@ -23,6 +23,8 @@ class ShopController extends Controller
 
     	$car = Car::findOrFail($id);
 
-    	return view('single_car', compact('car'));
+    	$related_cars = Car::all()->take(3);
+
+    	return view('single_car', compact('car', 'related_cars'));
     }
 }

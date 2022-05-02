@@ -35,4 +35,15 @@ class HomeController extends Controller
 
         return view('home', compact('bookings', 'order_count'));
     }
+
+    public function destroy(Request $request, $id)
+    {
+        $booking = Booking::findOrFail($id);
+
+        $booking->delete();
+
+        alert()->error('Cancelled', 'booking has been canceled');
+
+        return redirect()->route('home');
+    }
 }

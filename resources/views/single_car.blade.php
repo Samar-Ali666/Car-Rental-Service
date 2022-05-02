@@ -144,10 +144,11 @@
 									<div class="row">
 										<div class="column width-12">
 											<div class="row grid content-grid-3">
+												@foreach($related_cars as $related_car)
 												<div class="grid-item product grid-sizer cameras">
 													<div class="thumbnail rounded product-thumbnail border-grey-light img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#ffffff" data-hover-bkg-opacity="0.9">
 														<a class="overlay-link" href="single-product-device.html">
-															<img src="/assets/images/shop/grid/large-margins/product-1.jpg" alt=""/>
+															<img src="{{$related_car->photo->file}}" alt=""/>
 															<span class="overlay-info">
 																<span>
 																	<span>
@@ -163,79 +164,22 @@
 													<div class="product-details center">
 														<h3 class="product-title text-truncate">
 															<a href="#">
-																Toyota Corolla XLI
+																{{$related_car->name}}
 															</a>
 														</h3>
-														<span class="product-price price"><ins><span class="amount">PKR 4000.00 / One Day</span></ins></span>
+														<span class="product-price price"><ins><span class="amount">PKR {{$related_car->rent}}.00 / One Day</span></ins></span>
 														<div class="product-actions-mobile">
 															<a href="#" class="button add-to-cart-button rounded small">Book Now</a>
 														</div>
 													</div>
 												</div>
-												<div class="grid-item product headphones">
-													<div class="thumbnail rounded product-thumbnail border-grey-light img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#ffffff" data-hover-bkg-opacity="0.9">
-														<a class="overlay-link" href="single-product-device.html">
-															<img src="/assets/images/shop/grid/large-margins/product-5.jpg" alt=""/>
-															<span class="overlay-info">
-																<span>
-																	<span>
-																		View
-																	</span>
-																</span>
-															</span>
-														</a>
-														<div class="product-actions center">
-															<a href="#" class="button add-to-cart-button rounded small">Book Now</a>
-														</div>
-													</div>
-													<div class="product-details center">
-														<h3 class="product-title text-truncate">
-															<a href="#">
-																Suzuki WagonR
-															</a>
-														</h3>
-														<span class="product-price price"><ins><span class="amount">PKR 3000.00 / One Day</span></ins></span>
-														<div class="product-actions-mobile">
-															<a href="#" class="button add-to-cart-button rounded small">Book Now</a>
-														</div>
-													</div>
-												</div>
-												<div class="grid-item product speakers">
-													<div class="thumbnail rounded product-thumbnail border-grey-light img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#ffffff" data-hover-bkg-opacity="0.9">
-														<a class="overlay-link" href="single-product-device.html">
-															<img src="/assets/images/shop/grid/large-margins/product-6.jpg" alt=""/>
-															<span class="overlay-info">
-																<span>
-																	<span>
-																		View
-																	</span>
-																</span>
-															</span>
-														</a>
-														<div class="product-actions center">
-															<a href="#" class="button add-to-cart-button rounded small">Book Now</a>
-														</div>
-													</div>
-													<div class="product-details center">
-														<h3 class="product-title text-truncate">
-															<a href="#">
-																Honda Civic
-															</a>
-														</h3>
-														<span class="product-price price"><ins><span class="amount">PKR 6000.00 / Per Day</span></ins></span>
-														<div class="product-actions-mobile">
-															<a href="#" class="button add-to-cart-button rounded small">Book Now</a>
-														</div>
-													</div>
-												</div>
+												@endforeach
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<!-- Products Similar End -->
-
 					</div>
 				</div>
 			</div>

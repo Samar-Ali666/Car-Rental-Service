@@ -155,7 +155,11 @@
                                                     <span>
                                                         <a href="#" class="product-title">{{$booking->car->name}}</a>
                                                         <span class="product-description"><em>{{$booking->car->category->name}} class car</em></span>
-                                                        <a href="#" class="product-remove">Cancel</a>
+                                                        <form action="{{ route('home.destroy', $booking->id) }}" method="post">
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <button type="submit" class="product-remove">Cancel</button>
+                                                        </form>
                                                     </span>
                                                 </span>
                                             </td>

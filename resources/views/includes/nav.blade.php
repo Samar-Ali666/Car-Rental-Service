@@ -4,8 +4,8 @@
 						<div class="column width-12 nav-bar-inner">
 							<div class="logo">
 								<div class="logo-inner">
-									<a href="{{ url('/') }}"><img src="/assets/images/issem.png" alt="Faulkner Logo" /></a>
-									<a href="{{ url('/') }}"><img src="/assets/images/issem-logo.png" alt="Faulkner Logo" /></a>
+									<a href="{{ url('/') }}"><img src="/assets/images/issem.png" alt="Issem Logo" /></a>
+									<a href="{{ url('/') }}"><img src="/assets/images/issem-logo.png" alt="Issem Logo" /></a>
 								</div>
 							</div>
 							<nav class="navigation nav-block secondary-navigation nav-right">

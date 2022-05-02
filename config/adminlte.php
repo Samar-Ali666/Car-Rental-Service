@@ -126,7 +126,7 @@ return [
     'classes_content_wrapper' => '',
     'classes_content_header' => '',
     'classes_content' => '',
-    'classes_sidebar' => 'sidebar-dark-primary elevation-4',
+    'classes_sidebar' => 'sidebar-dark-success elevation-4',
     'classes_sidebar_nav' => '',
     'classes_topnav' => 'navbar-white navbar-light',
     'classes_topnav_nav' => 'navbar-expand',
@@ -267,6 +267,12 @@ return [
             'text' => 'Mails',
             'url'  => 'admin/mails',
             'icon' => 'fas fa-mail-bulk',
+        ],
+        [
+            'text' => '',
+            'url'  => '#',
+            'icon' => 'fas fa-bell',  
+            'topnav_right' => true,
         ],
         ['header' => 'account_settings'],
         [
